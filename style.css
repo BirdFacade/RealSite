@@ -1,0 +1,38 @@
+html{
+    background-color: rgb(99 39 39);
+}
+
+#TopRow {
+    height: 100px;
+    background-color: #742828;
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Introduction {
+    border-radius: 10px;
+    background-color: #fff8e5;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 45pc;
+    top: 11pc;
+}
+
+#PlayGame {
+    border-radius: 10px;
+    background-color: #fff8e5;
+    height: 100px;
+    width: 400px;
+    position: relative;
+    left: 45pc;
+    top: -13pc;
+}
+
+.TextColor {
+    color: #370b0b;
+}
