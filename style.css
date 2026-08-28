@@ -1,9 +1,11 @@
 html{
     background-color: rgb(99 39 39);
+    user-select: none;
 }
 
 #TopRow {
     height: 100px;
+    width: auto;
     background-color: #370b0b;
     display: flex;
     align-content: stretch;
@@ -11,6 +13,27 @@ html{
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
+    font-size: xxx-large;
+    z-index: 2;
+}
+
+#ItemContainer {
+    margin-left: 300px; 
+    margin-right: 300px; 
+    display: flex; 
+    flex-direction: column;
+    align-content: center; 
+    align-items: center;
+}
+
+#Column1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
 }
 
 #Introduction {
@@ -19,8 +42,6 @@ html{
     height: 400px;
     width: 400px;
     position: relative;
-    left: 45pc;
-    top: 11pc;
 }
 
 #PlayGame {
@@ -29,13 +50,32 @@ html{
     height: 100px;
     width: 400px;
     position: relative;
-    left: 45pc;
-    top: -13pc;
+    margin-top: 60px;
+}
+
+#Column2 {
+    position: relative;
+    margin-top: 15pc;
 }
 
 #Box1 {
-    background-color: #370b0b
-    
+    background-color: #370b0b;
+    height: 125px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    position: relative;
+    top: 10pc;
+}
+
+.WhiteBorder {
+    background-color: #fff8e5;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    z-index: -2;
 }
 
 .TextColor {
@@ -44,4 +84,76 @@ html{
 
 .TextColorWhite {
     color: #fff8e5;
+}
+
+#BottomRow {
+    margin-top: 20px;
+    height: 100px;
+    width: auto;
+    background-color: #370b0b;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    /*position: relative;
+    */
+}
+
+/*
+#RedBoxTESTFROMJERE1 {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+*/
+
+#DownScroll {
+    writing-mode: tb-rl;
+    color: #370b0b;
+    position: absolute;
+    top: 10pc;
+    animation: downScroll 20s infinite linear;
+    font-size: 100px;
+    z-index: 1;
+    left: -2pc;
+}
+
+@keyframes downScroll {
+
+    from {
+        transform: translateY(-200%);
+    }
+
+    to {
+        transform: translateY(1800%);
+    }
+
+}
+
+#UpScroll {
+    writing-mode: tb-rl;
+    color: #370b0b;
+    position: absolute;
+    top: 10pc;
+    animation: upScroll 20s infinite linear;
+    font-size: 100px;
+    z-index: 1;
+    left: -2pc;
+}
+
+@keyframes upScroll {
+
+    from {
+        transform: translateY(1800%);
+    }
+
+    to {
+        transform: translateY(-200%);
+    }
 }
