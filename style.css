@@ -4,7 +4,7 @@ html{
 
 #TopRow {
     height: 100px;
-    background-color: #742828;
+    background-color: #370b0b;
     display: flex;
     align-content: stretch;
     justify-content: center;
@@ -33,6 +33,15 @@ html{
     top: -13pc;
 }
 
+#Box1 {
+    background-color: #370b0b
+    
+}
+
 .TextColor {
     color: #370b0b;
+}
+
+.TextColorWhite {
+    color: #fff8e5;
 }
