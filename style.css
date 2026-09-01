@@ -4,7 +4,7 @@ html{
 }
 
 #TopRow {
-    height: 100px;
+    height: 150px;
     width: auto;
     background-color: #370b0b;
     display: flex;
@@ -39,9 +39,10 @@ html{
 #Introduction {
     border-radius: 10px;
     background-color: #fff8e5;
-    height: 400px;
-    width: 400px;
+    height: 610px;
+    width: 500px;
     position: relative;
+    margin-top: 7pc;
 }
 
 #PlayGame {
@@ -51,11 +52,12 @@ html{
     width: 400px;
     position: relative;
     margin-top: 60px;
+    margin-left: 3pc;
 }
 
 #Column2 {
     position: relative;
-    margin-top: 15pc;
+    margin-top: 30pc;
 }
 
 #Box1 {
@@ -66,7 +68,7 @@ html{
     margin-right: auto;
     border-radius: 5px;
     position: relative;
-    top: 10pc;
+    top: 28pc;
 }
 
 .WhiteBorder {
@@ -89,7 +91,6 @@ html{
 .glow {
     color: #fff8e5;
     text-align: center;
-    font-size: 55px;
     font-weight: bold;
     animation: glowing 2s ease-in-out infinite alternate;
 }
